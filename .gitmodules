@@ -1,0 +1,3 @@
+[submodule "studium"]
+	path = studium
+	url = https://github.com/loozizm/studium.git

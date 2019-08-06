@@ -1,0 +1,9 @@
+version: "2"
+services:
+  dev:
+    build: .
+    restart: always
+    tty: true
+    volumes:
+      - ./hosting:/src
+    working_dir: "/src"
