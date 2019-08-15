@@ -3,10 +3,10 @@ services:
   dev:
     build: .
     restart: always
-    tty: true
+    command: npm run serve
     volumes:
-      - ./studium/hosting:/src
-    working_dir: "/src"
+      - ./studium/hosting:/src/studium
+    working_dir: "/src/studium"
     ports:
       - "8080:8080"
 
