@@ -5,8 +5,8 @@ services:
     restart: always
     command: npm run serve
     volumes:
-      - ./studium/hosting:/src/studium
-    working_dir: "/src/studium"
+      - ./:/src
+    working_dir: "/src/studium/hosting"
     ports:
       - "8080:8080"
 
